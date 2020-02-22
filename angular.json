@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ericli.github.io"
+    }
+  },
+  "defaultProject": "ericli.github.io",
+  "cli": {
+    "analytics": false
+  }
 }
