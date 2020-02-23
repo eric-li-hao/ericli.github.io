@@ -9,15 +9,17 @@
         (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Eric Li</span>
-      <div class="hidden-sm-and-down">
-        <a href="#">home</a>
-        <a href="#">project</a>
-        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>Item 1</button>
-          <button mat-menu-item>Item 2</button>
-        </mat-menu>
+      <span class="eric">Eric Li</span>
+      <div class="items">
+        <div class="hidden-sm-and-down">
+          <button mat-button class="item"  [matMenuTriggerFor]="menu">Menu</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
+          <button mat-button class="item">home</button>
+          <button mat-button class="item">project</button>
+        </div>
       </div>
     </mat-toolbar>
   </mat-sidenav-content>
