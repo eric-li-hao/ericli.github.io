@@ -18,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './body/home/home.component';
+import {MatTableModule} from '@angular/material/table';
 
 registerLocaleData(en);
 
@@ -25,7 +27,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ registerLocaleData(en);
     MatMenuModule,
     NgZorroAntdModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
