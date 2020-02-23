@@ -1,12 +1,13 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav-content>
-    <mat-toolbar>
+    <mat-toolbar class="toolbar">
       <button
+        class="hidden-md-and-up"
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()">
-        <mat-icon aria-label="Side nav toggle icon" class="hidden-md-and-up">menu</mat-icon>
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Eric Li</span>
       <div class="hidden-sm-and-down">
@@ -21,7 +22,10 @@
     </mat-toolbar>
   </mat-sidenav-content>
   <mat-sidenav #drawer class="sidenav" fixedInViewport mode="over" [(opened)]="sidebarVisible">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list class="sidebar-button">
+      <button>home</button>
+      <button>project</button>
+    </mat-nav-list>
     <mat-nav-list>
       <a mat-list-item href="#">Link 1</a>
       <a mat-list-item href="#">Link 2</a>
