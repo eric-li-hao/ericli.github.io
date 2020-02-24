@@ -5,18 +5,18 @@
     aria-label="Toggle sidenav"
     mat-icon-button
     (click)="drawer.toggle()">
-    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    <mat-icon aria-label="Side nav toggle icon" style="text-transform: lowercase">menu</mat-icon>
   </button>
-  <span class="eric">Eric Li</span>
+  <span class="eric">navigation</span>
   <div class="items">
     <div class="hidden-sm-and-down">
-      <button mat-button class="item"  [matMenuTriggerFor]="menu">Menu</button>
+      <button mat-button class="item"  [matMenuTriggerFor]="menu">contact</button>
       <mat-menu #menu="matMenu">
         <button mat-menu-item>Item 1</button>
         <button mat-menu-item>Item 2</button>
       </mat-menu>
-      <button mat-button class="item">home</button>
       <button mat-button class="item">project</button>
+      <button mat-button class="item">home</button>
     </div>
   </div>
 </mat-toolbar>
