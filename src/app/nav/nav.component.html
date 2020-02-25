@@ -12,8 +12,9 @@
     <div class="hidden-sm-and-down">
       <a mat-button class="item"  [matMenuTriggerFor]="menu">contact</a>
       <mat-menu #menu="matMenu">
-        <a mat-menu-item>Item 1</a>
-        <a mat-menu-item>Item 2</a>
+        <a mat-menu-item href="https://www.linkedIn.com/in/eric-haoli"><i nz-icon nzType="linkedin" nzTheme="fill"></i><span style="float: right">linkedin</span></a>
+        <a mat-menu-item href="http://github.com/eric-li-hao"><i nz-icon nzType="github" nzTheme="fill"></i><span style="float: right">github</span></a>
+        <a mat-menu-item>email</a>
       </mat-menu>
       <a mat-button routerLink="/project" class="item">project</a>
       <a mat-button routerLink="/home" class="item">home</a>
@@ -22,14 +23,13 @@
 </mat-toolbar>
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport mode="over" [(opened)]="sidebarVisible">
-    <mat-nav-list class="sidebar-button">
-      <button>home</button>
-      <button>project</button>
-    </mat-nav-list>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLink="/home">home</a>
+      <a mat-list-item routerLink="/project">project</a>
+      <a mat-list-item style="color: gray" disabled="true">contact me</a>
+      <a mat-list-item href="https://www.linkedIn.com/in/eric-haoli"><i nz-icon nzType="linkedin" nzTheme="fill"></i><span style="float: right">linkedin</span></a>
+      <a mat-list-item href="http://github.com/eric-li-hao"><i nz-icon nzType="github" nzTheme="fill"></i><span style="float: right">github</span></a>
+      <a mat-list-item href="#">email</a>
     </mat-nav-list>
   </mat-sidenav>
 </mat-sidenav-container>
