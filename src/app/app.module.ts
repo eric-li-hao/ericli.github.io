@@ -20,6 +20,7 @@ import en from '@angular/common/locales/en';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './body/home/home.component';
 import {MatTableModule} from '@angular/material/table';
+import { ProjectComponent } from './body/project/project.component';
 
 registerLocaleData(en);
 
@@ -28,7 +29,8 @@ registerLocaleData(en);
     AppComponent,
     NavComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

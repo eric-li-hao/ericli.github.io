@@ -2,6 +2,10 @@
  text-transform: uppercase;
 }
 
+a {
+  line-height: 60px;
+}
+
 .toolbar{
   align-items: center;
   display: flex;

@@ -10,13 +10,13 @@
   <span class="eric">navigation</span>
   <div class="items">
     <div class="hidden-sm-and-down">
-      <button mat-button class="item"  [matMenuTriggerFor]="menu">contact</button>
+      <a mat-button class="item"  [matMenuTriggerFor]="menu">contact</a>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
+        <a mat-menu-item>Item 1</a>
+        <a mat-menu-item>Item 2</a>
       </mat-menu>
-      <button mat-button class="item">project</button>
-      <button mat-button class="item">home</button>
+      <a mat-button routerLink="/project" class="item">project</a>
+      <a mat-button routerLink="/home" class="item">home</a>
     </div>
   </div>
 </mat-toolbar>
