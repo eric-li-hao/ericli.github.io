@@ -10,11 +10,11 @@
   <span class="eric">navigation</span>
   <div class="items">
     <div class="hidden-sm-and-down">
-      <a mat-button class="item"  [matMenuTriggerFor]="menu">contact</a>
+      <a mat-button class="item" style="width: 120px" [matMenuTriggerFor]="menu">contact<mat-icon class="arrow_icon">keyboard_arrow_down</mat-icon></a>
       <mat-menu #menu="matMenu">
-        <a mat-menu-item href="https://www.linkedIn.com/in/eric-haoli"><i nz-icon nzType="linkedin" nzTheme="fill"></i><span style="float: right">linkedin</span></a>
-        <a mat-menu-item href="http://github.com/eric-li-hao"><i nz-icon nzType="github" nzTheme="fill"></i><span style="float: right">github</span></a>
-        <a mat-menu-item>email</a>
+        <a mat-menu-item href="https://www.linkedIn.com/in/eric-haoli" target="_blank"><i nz-icon nzType="linkedin" nzTheme="fill"></i><span>linkedin</span></a>
+        <a mat-menu-item href="http://github.com/eric-li-hao" target="_blank"><i nz-icon nzType="github" nzTheme="fill"></i><span>github</span></a>
+        <a mat-menu-item><i nz-icon nzType="mail" nzTheme="outline"></i><span>email</span></a>
       </mat-menu>
       <a mat-button routerLink="/project" class="item">project</a>
       <a mat-button routerLink="/home" class="item">home</a>
@@ -27,9 +27,9 @@
       <a mat-list-item routerLink="/home">home</a>
       <a mat-list-item routerLink="/project">project</a>
       <a mat-list-item style="color: gray" disabled="true">contact me</a>
-      <a mat-list-item href="https://www.linkedIn.com/in/eric-haoli"><i nz-icon nzType="linkedin" nzTheme="fill"></i><span style="float: right">linkedin</span></a>
-      <a mat-list-item href="http://github.com/eric-li-hao"><i nz-icon nzType="github" nzTheme="fill"></i><span style="float: right">github</span></a>
-      <a mat-list-item href="#">email</a>
+      <a mat-list-item href="https://www.linkedIn.com/in/eric-haoli" target="_blank"><i nz-icon nzType="linkedin" nzTheme="fill"></i><span>linkedin</span></a>
+      <a mat-list-item href="http://github.com/eric-li-hao" target="_blank"><i nz-icon nzType="github" nzTheme="fill"></i><span>github</span></a>
+      <a mat-list-item ><i nz-icon nzType="mail" nzTheme="outline"></i><span>email</span></a>
     </mat-nav-list>
   </mat-sidenav>
 </mat-sidenav-container>
