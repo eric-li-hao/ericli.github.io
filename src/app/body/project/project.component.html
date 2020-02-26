@@ -1,1 +1,57 @@
-
+<!--<div>-->
+<!--  <mat-accordion (cdkDropListDropped)="onDrop($event)" cdkDropList>-->
+<!--    <mat-expansion-panel  cdkDrag cdkDragLockAxis="y"-->
+<!--                         class="editions-list light-border">-->
+<!--      <mat-expansion-panel-header cdkDragHandle class="edition-header">-->
+<!--        <mat-panel-title>-->
+<!--          <mat-icon class="handle-icon drag-drop">drag_indicator</mat-icon>-->
+<!--          <mat-label class="edition-titles">{{}}</mat-label>-->
+<!--          <mat-label class="edition-price-info">-->
+<!--            Wholesale {{}}</mat-label>-->
+<!--          <mat-label class="edition-price-info">-->
+<!--            MSRP {{}}</mat-label>-->
+<!--          <mat-label-->
+<!--            class="edition-price-info">{{}}</mat-label>-->
+<!--        </mat-panel-title>-->
+<!--      </mat-expansion-panel-header>-->
+<!--      <form [formGroup]=''>-->
+<!--        <mat-form-field appearance="fill" class="edition-titles-field">-->
+<!--          <mat-label>Edition Title</mat-label>-->
+<!--          <input class="edition-titles-input" formControlName=""-->
+<!--                 matInput placeholder="Edition Title"/>-->
+<!--        </mat-form-field>-->
+<!--        <div class="edition-double-field">-->
+<!--          <mat-form-field appearance="fill" class="edition-double-field-inputs-left">-->
+<!--            <mat-label>Wholesale Price</mat-label>-->
+<!--            <input  formControlName="" matInput-->
+<!--                   novalidate placeholder="Wholesale Price" required>-->
+<!--            <mat-error >This field is-->
+<!--              required-->
+<!--            </mat-error>-->
+<!--          </mat-form-field>-->
+<!--          <mat-form-field appearance="fill" class="edition-double-field-inputs-right">-->
+<!--            <mat-label>Suggested Retail Price</mat-label>-->
+<!--            <input  formControlName="" matInput-->
+<!--                   novalidate placeholder="Suggested Retail Price">-->
+<!--          </mat-form-field>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--      <div class="edition-id">{{}}</div>-->
+<!--    </mat-expansion-panel>-->
+<!--  </mat-accordion>-->
+<!--</div>-->
+<form class="form-main" [formGroup]="projectGroup" >
+  <mat-accordion (cdkDropListDropped)="onDrop($event)" cdkDropList>
+    <mat-expansion-panel cdkDrag cdkDragLockAxis="y" class="" style="background: black">
+      <mat-expansion-panel-header cdkDragHandle style="background: blue" class="">
+        <mat-panel-title>
+          <mat-icon class="">drag_indicator</mat-icon>
+          <mat-label class="">wow</mat-label>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-form-field style="background: yellow">
+        <mat-label matInput>Wholesale Price</mat-label>
+      </mat-form-field>
+    </mat-expansion-panel>
+  </mat-accordion>
+</form >
