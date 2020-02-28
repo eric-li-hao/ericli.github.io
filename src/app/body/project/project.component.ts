@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormArray, FormControl, FormGroup} from '@angular/forms';
-import {ProjectModel} from './project.model';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
+import {Project} from './project.model';
+import {ProjectList} from './project.interface';
 
 @Component({
   selector: 'app-project',
@@ -8,27 +10,18 @@ import {ProjectModel} from './project.model';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
-
-  projectForm: FormGroup;
-
-  constructor() { }
-
-  ngOnInit(): void {
-    const project = new ProjectModel();
-    project.name = 'Personal Website';
-    project.id = 1;
-    project.languages = 'angular';
-    project.level = 'high';
-    project.date = new Date('02 / 02 / 2019');
-    this.initForm(project);
+  projects: ProjectList[];
+  onDrop(event: CdkDragDrop<FormArray>): void {
+    // moveItemInArray(
+    //   (this.projectForm.get('editionsFormControl') as FormArray).controls,
+    //   event.previousIndex,
+    //   event.currentIndex
+    // );
+    // this.projectForm.markAsDirty();
   }
 
-  initForm(project: ProjectModel): void {
-    this.projectForm.addControl('nameControl', new FormControl(project.name, []));
-    this.projectForm.addControl('languageControl', new FormControl(project.languages, []));
-    this.projectForm.addControl('levelControl', new FormControl(project.level, []));
-    this.projectForm.addControl('indexControl', new FormControl(project.id, []));
-    this.projectForm.addControl('timeControl', new FormControl(project.date, []));
+  ngOnInit(): void {
+    this.projects = Project;
   }
 
 }

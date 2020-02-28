@@ -1,27 +1,25 @@
 <div class="project">
-  <form class="form-frame">
-    <mat-accordion class="acc" (cdkDropListDropped)="onDrop($event)" cdkDropList>
-      <mat-expansion-panel class="ex-panel" cdkDrag cdkDragLockAxis="y" >
-        <mat-expansion-panel-header class="ex-header" cdkDragHandle>
-          <mat-panel-title class="ex-title">
-            <mat-icon class="handle-icon drag-drop">drag_indicator</mat-icon>
-            <span>Personal Website</span>
-          </mat-panel-title>
-          <mat-panel-description>
-            Type your name and age
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-form-field>
-          <mat-label>First name</mat-label>
-          <input matInput>
-        </mat-form-field>
+  <mat-accordion class="acc" (cdkDropListDropped)="onDrop($event)" cdkDropList>
+    <mat-expansion-panel *ngFor="let pro of projects" class="ex-panel" cdkDrag cdkDragLockAxis="y" >
+      <mat-expansion-panel-header class="ex-header" cdkDragHandle>
+        <mat-panel-title class="ex-title">
+          <mat-icon class="handle-icon drag-drop">drag_indicator</mat-icon>
+          <span>{{pro.name}}</span>
+        </mat-panel-title>
+        <mat-panel-description>
+          Type your name and age
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-form-field>
+        <mat-label>First name</mat-label>
+        <input matInput>
+      </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Age</mat-label>
-          <input matInput type="number" min="1">
-        </mat-form-field>
-      </mat-expansion-panel>
-    </mat-accordion>
-  </form>
+      <mat-form-field>
+        <mat-label>Age</mat-label>
+        <input matInput type="number" min="1">
+      </mat-form-field>
+    </mat-expansion-panel>
+  </mat-accordion>
 
 </div>
