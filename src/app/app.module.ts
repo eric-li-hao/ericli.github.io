@@ -21,6 +21,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './body/home/home.component';
 import {MatTableModule} from '@angular/material/table';
 import { ProjectComponent } from './body/project/project.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 registerLocaleData(en);
 
@@ -46,7 +50,11 @@ registerLocaleData(en);
     NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatInputModule,
+    DragDropModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

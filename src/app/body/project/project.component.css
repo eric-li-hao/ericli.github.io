@@ -1,0 +1,24 @@
+.project {
+  height: 100%;
+  width: 100%;
+}
+.form-frame{
+  margin-top: 100px;
+  width: 100%;
+}
+.acc{
+  width: 100%;
+}
+.ex-panel{
+  width: 60%;
+  margin-left: 20%;
+}
+.ex-header {
+  min-height: 200px!important;
+}
+:host /deep/ .mat-expansion-panel-body {
+  height: 400px;
+}
+.ex-title{
+  height: 150px;
+}
