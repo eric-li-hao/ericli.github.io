@@ -5,17 +5,49 @@
 }
 .acc{
   width: 100%;
+  background: transparent;
 }
-.ex-panel{
+.ex-panel {
   width: 60%;
   margin-left: 20%;
+  margin-bottom: 100px;
 }
 .ex-header {
-  min-height: 200px!important;
+  min-height: 200px;
+  height: 200px;
+  alignment: center;
+}
+:host /deep/ .mat-expansion-panel-header.mat-expanded {
+  min-height: 60px;
+  border: solid 1px black;
 }
 :host /deep/ .mat-expansion-panel-body {
-  height: 400px;
+  min-height: 400px;
+  background:gray;
 }
 .ex-title{
+}
+
+:host /deep/ .mat-expansion-indicator {
   height: 150px;
+}
+.handle-icon{
+  height: 150px;
+}
+.handle-icon.mat-expanded {
+  height: 0!important;
+}
+
+.two {
+  height: 200px;
+
+}
+.name {
+  height: 50px;
+  display: block;
+}
+.info {
+  display: block;
+  height: 120px;
+  margin-top: 30px;
 }
