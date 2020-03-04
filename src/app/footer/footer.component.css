@@ -17,4 +17,8 @@
 li{
   display: inline;
   float:left;
+  padding-right: 10px;
+}
+.brand-list {
+  float: left;
 }
