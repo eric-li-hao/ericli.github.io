@@ -1,7 +1,9 @@
 .project {
-  height: 100%;
+  height: auto;
   width: 100%;
   margin-top: 100px;
+  padding-bottom: 85px;
+  background: transparent;
 }
 .acc{
   width: 100%;
@@ -16,14 +18,20 @@
   min-height: 200px;
   height: 200px;
   alignment: center;
+  background: darkgray;
+}
+.ex-panel:hover {
+  background: gray;
 }
 :host /deep/ .mat-expansion-panel-header.mat-expanded {
   min-height: 60px;
-  border: solid 1px black;
+}
+:host /deep/ .mat-expansion-panel-header.mat-expanded:focus {
+  background: gray;
 }
 :host /deep/ .mat-expansion-panel-body {
   min-height: 400px;
-  background:gray;
+  background:lightgray;
 }
 .ex-title{
 }
