@@ -2,6 +2,5 @@
 
 html, body {
   background: radial-gradient(circle,#606060,#202020);
-  height: fit-content;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
