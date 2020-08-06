@@ -1,5 +1,30 @@
+//* {
+//  border: solid 2px cadetblue;
+//}
+
 .footer-container {
   height: 40px;
   width: 100%;
-  background: aquamarine;
+  position: absolute;
+  bottom: 0;
+  background: darkgrey;
+}
+
+.footer-info-container {
+  display: flex;
+  margin: 6px;
+}
+
+.footer-time {
+  margin: 0 10px;
+}
+
+.footer-creator {
+  margin: 0 5px;
+}
+
+.footer-tool {
+  .foot-icon {
+    margin: 0 5px;
+  }
 }
