@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { IntroComponent } from './home/intro/intro.component';
 import { NavComponent } from './nav/nav.component';
+import {MenuModule} from 'primeng/menu';
+import {TabMenuModule} from 'primeng/tabmenu';
+import {MegaMenuModule} from 'primeng/megamenu';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { NavComponent } from './nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MenuModule,
+    TabMenuModule,
+    MegaMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
