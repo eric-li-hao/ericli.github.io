@@ -4,7 +4,31 @@
 @import "~primeng/resources/themes/nova/theme.css";
 @import "~primeng/resources/themes/nova-accent/theme.css";
 @import "~primeng/resources/themes/nova-alt/theme.css";
+@import "~primeng/resources/themes/md-light-deeppurple/theme.css";
 @import "~primeng/resources/primeng.min.css";
 body {
   margin: 0;
+  background-image: linear-gradient(to right bottom, #6b70d1, #5d84dc, #5597e3, #59a8e6, #68b8e7, #62c3eb, #60ceed, #64d9ed, #49e3ea, #37ece0, #41f4cf, #5ffbb9);
+}
+.p-tabmenu {
+  background: transparent;
+  .p-tabmenu-nav {
+    background: transparent;
+    border: solid transparent;
+    .p-tabmenuitem {
+      background: transparent;
+      .p-menuitem-link {
+        background: transparent;
+        color: #FFEDCB;
+      }
+    }
+  }
+}
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem:not(.p-highlight):not(.p-disabled):hover .p-menuitem-link {
+  background: transparent;
+  color: #AFF18A;
+}
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+  background: transparent;
+  color: #82F9BE;
 }
