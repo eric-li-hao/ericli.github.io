@@ -1,5 +1,6 @@
 @media only screen and (max-width: 1000px) {
   .main-container {
+    height: 100%;
   }
   .main-nav {
     display: inline-block;
@@ -8,5 +9,6 @@
   .body-container {
     display: inline-block;
     width: 85%;
+    height: 100%;
   }
 }

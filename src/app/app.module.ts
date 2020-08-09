@@ -15,6 +15,7 @@ import {RippleModule} from 'primeng/ripple';
 import {BodyComponent} from './body/body.component';
 import { WelcomeComponent } from './body/welcome/welcome.component';
 import { SkillsComponent } from './body/skills/skills.component';
+import {FieldsetModule} from 'primeng/fieldset';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { SkillsComponent } from './body/skills/skills.component';
     ButtonModule,
     BrowserAnimationsModule,
     RippleModule,
+    FieldsetModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
