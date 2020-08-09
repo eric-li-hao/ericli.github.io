@@ -13,6 +13,8 @@ import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RippleModule} from 'primeng/ripple';
 import {BodyComponent} from './body/body.component';
+import { WelcomeComponent } from './body/welcome/welcome.component';
+import { SkillsComponent } from './body/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import {BodyComponent} from './body/body.component';
     FooterComponent,
     IntroComponent,
     NavComponent,
-    BodyComponent
+    BodyComponent,
+    WelcomeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
