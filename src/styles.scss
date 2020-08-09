@@ -9,6 +9,7 @@
 body {
   margin: 0;
   background-image: linear-gradient(to right bottom, #6b70d1, #5d84dc, #5597e3, #59a8e6, #68b8e7, #62c3eb, #60ceed, #64d9ed, #49e3ea, #37ece0, #41f4cf, #5ffbb9);
+  min-width: 800px;
 }
 .p-tabmenu {
   background: transparent;
@@ -31,4 +32,14 @@ body {
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
   background: transparent;
   color: #82F9BE;
+}
+.p-menu {
+  background: #A8AABC;
+  color: #3B3746;
+  border: none;
+  border-radius: 0;
+  width: fit-content;
+}
+.p-menu .p-menuitem-link .p-menuitem-text {
+  color: #3B3746;
 }

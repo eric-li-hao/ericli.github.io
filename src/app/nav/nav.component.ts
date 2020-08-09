@@ -16,7 +16,7 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
     this.menuItems = [
-      {label: 'Home', icon: 'pi pi-fw pi-body'},
+      {label: 'Home', icon: 'pi pi-fw pi-home'},
       {label: 'Project', icon: 'pi pi-fw pi-th-large'},
       {label: 'Contact Me', icon: 'pi pi-fw pi-id-card'},
     ];
@@ -25,9 +25,9 @@ export class NavComponent implements OnInit {
 
 
     this.sidebarItems = this.sidebarItems = [
-      {label: 'Home', icon: 'pi pi-fw pi-body'},
+      {label: 'Home', icon: 'pi pi-fw pi-home'},
       {label: 'Project', icon: 'pi pi-fw pi-th-large'},
-      {label: 'Contact Me', icon: 'pi pi-fw pi-id-card'},
+      {label: 'Contact', icon: 'pi pi-fw pi-id-card'},
     ];
   }
 
