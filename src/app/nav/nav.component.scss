@@ -6,7 +6,7 @@
 }
 @media only screen and (min-width: 1001px) {
   .nav-row-container {
-    margin-left: 40%;
+    margin-left: 35%;
   }
   .nav-sidebar-container {
     display: none;
@@ -18,8 +18,7 @@
     display: none;
   }
   .nav-sidebar-container {
-    display: block;
-    float: left;
+    display: flex;
   }
 }
 
