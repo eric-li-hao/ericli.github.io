@@ -1,6 +1,35 @@
-.nav-container {
-}
-.nav-row-container {
-  margin-left: 40%;
+* {
+  border: solid 1px black;
 }
 
+.nav-container {
+}
+@media only screen and (min-width: 1001px) {
+  .nav-row-container {
+    margin-left: 40%;
+  }
+  .nav-sidebar-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-row-container {
+    display: none;
+  }
+  .nav-sidebar-container {
+    display: block;
+    float: left;
+  }
+}
+
+.sidebar-button {
+  background: #845EC2;
+}
+.sidebar-button:focus {
+  background: #008CCC;
+}
+
+.sidebar-button:hover {
+  background: #008CCC;
+}

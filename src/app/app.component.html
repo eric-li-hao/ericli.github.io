@@ -1,5 +1,10 @@
-<app-nav></app-nav>
-<div class="main-container">
-</div>
-<app-footer></app-footer>
-<router-outlet></router-outlet>
+<ng-container class="main-container">
+  <div class="main-nav">
+    <app-nav></app-nav>
+  </div>
+  <div class="body-container">
+    <app-body></app-body>
+  </div>
+  <app-footer></app-footer>
+  <router-outlet></router-outlet>
+</ng-container>
