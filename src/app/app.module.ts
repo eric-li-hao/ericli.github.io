@@ -11,11 +11,14 @@ import {TabMenuModule} from 'primeng/tabmenu';
 import {TieredMenuModule} from 'primeng/tieredmenu';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {RippleModule} from 'primeng/ripple';
-import {BodyComponent} from './body/body.component';
+import { RippleModule } from 'primeng/ripple';
+import { BodyComponent} from './body/body.component';
 import { WelcomeComponent } from './body/welcome/welcome.component';
 import { SkillsComponent } from './body/skills/skills.component';
-import {FieldsetModule} from 'primeng/fieldset';
+import { FieldsetModule } from 'primeng/fieldset';
+import {ToastModule} from 'primeng/toast';
+import {FormsModule} from '@angular/forms';
+import {ChartModule} from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import {FieldsetModule} from 'primeng/fieldset';
     BrowserAnimationsModule,
     RippleModule,
     FieldsetModule,
+    ChartModule,
+    ToastModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
